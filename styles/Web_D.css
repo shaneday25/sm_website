@@ -1,0 +1,233 @@
+/* Variables */
+:root{
+    --primary: #918132;
+    --secondary: #525253;
+    --footercolor: #fbfcf8;
+    --hovercolor: #7a6c35;
+
+    --cellbackground: #d3d3d6;
+    --cellborder: #bebec0;
+    --background:#ececf1;
+    --captionbackground:#c5b55c;
+    --footerbackground:#463e1d;
+
+    --gap: 15px;
+
+    --leftright: 10px;
+    --topbottom: 10px;
+    --borderradius: 10px;
+
+    --cellborderweight: 2px;
+  }
+
+/* Reset */
+*{
+  box-sizing: border-box;
+}
+
+body,p,a,ul,li,div{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--secondary);
+  }
+
+li{
+    list-style-type: none;
+  }
+
+h1 {
+  color: var(--footercolor);
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+h2, h3 {
+  color: var(--primary);
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+/* Base styles */
+body {
+    background: var(--background);
+    font-family: 'Montserrat';
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+/* header */
+
+.header{
+  margin: var(--topbottom) var(--leftright);
+  padding: var(--topbottom) var(--leftright);
+  background-color: var(--footerbackground);
+  border-radius: var(--borderradius);
+  /* border: solid var(--cellborderweight) var(--cellborder); */
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  justify-content: center;
+}
+
+nav ul li{
+  background-color: var(--footerbackground);
+  text-align: center;
+  width: 80%;
+  line-height: 35px;
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--footerbackground);
+}
+
+nav ul li a{
+  color: var(--footercolor);
+}
+
+nav ul li:hover{
+  border-radius: var(--borderradius);
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--footercolor);
+  /* background-color: var(--hovercolor); */
+}
+
+nav{
+  /* border: solid var(--cellborderweight) var(--cellborder); */
+}
+
+/* just text */
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap);
+  text-align: justify;
+  margin: var(--topbottom) var(--leftright);
+}
+
+.container div{
+  display: block;
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--cellborder);
+  background: var(--cellbackground);
+  padding: 10px;
+}
+
+/* just images */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap);
+  margin: var(--topbottom) var(--leftright);
+}
+
+img {
+  display: block;
+  border-radius: var(--borderradius);
+  box-shadow: -1px 0px 0px rgba(0,0,0,0.06);
+  width: 100%;
+}
+
+.container_text_img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: justify;
+  margin: var(--topbottom) var(--leftright);
+}
+
+.container_text_img div{
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--cellborder);
+  
+}
+
+.textimg {
+  text-align: center;
+}
+
+.container_general{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap);
+  text-align: justify;
+  margin: var(--topbottom) var(--leftright);
+}
+
+.container_general div{
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--cellborder);
+  background-color: var(--cellbackground);
+}
+
+.general p{
+  margin: 0 10px;
+}
+
+.general h3{
+  margin: 10px 10px;
+}
+
+.container_general > div.special{
+  background-color: var(--captionbackground);
+  text-align: center;  
+  padding:20px 0;
+}
+
+.caption_main{
+  font-size: 3em;
+  font-style: italic;
+}
+
+p.caption_text{
+  font-size: 1.2em;
+  margin: var(--topbottom) 0;
+}
+
+#container_footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gap);
+  text-align: center;
+  margin: var(--topbottom) var(--leftright);
+}
+
+footer{
+  border-radius: var(--borderradius);
+  background-color: var(--footerbackground);
+  padding: 20px 20px;
+}
+
+#container_footer p{
+  color: var(--footercolor);
+}
+
+.footer_main{
+  font-size: 1.5em;
+  grid-column: 1 / span 3;
+}
+
+.footer_text{
+  font-size: 0.6em;;
+}
+
+.email{
+  grid-column: 1 / 2 ;
+  text-align: left;
+}
+
+.facebook{
+  grid-column: 2 / 3 ;
+  text-align: center;
+}
+
+.info{
+  grid-column: 3 / 4 ;
+  text-align: right;
+}
