@@ -5,13 +5,13 @@
     --tertiaryfont: #2a2ac5;
     --headerfootercolor: #fbfcf8;
     --hovercolor: #7a6c35;
-    --cellbackground: #d3d3d6;
+    --cellbackground: #dfdcab;
     --cellborder: #bebec0;
     --background:#e4e3d1;
     --captionbackground:#c5b55c;
     --headerfooterbackground:#0f0f0f;
 
-    --gap: 15px;
+    --gap: 20px;
     --leftright: 10px;
     --topbottom: 10px;
     --borderradius: 10px;
@@ -73,6 +73,7 @@ h1 {
 
 h2 {
     font-size: 1.4em;
+    font-weight: bold;
   }
 
 h3{
@@ -145,7 +146,39 @@ body {
 
 /* Practice */
 
+#practice{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--gap);
+  justify-items: center;
+  justify-content: center;
+}
 
+#practice div{
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--cellborder);
+  background: var(--cellbackground);
+  padding: 10px;
+}
+
+.practice_header{
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.practice_map{
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: var(--borderradius);
+  border: solid var(--cellborderweight) var(--cellborder);
+  background: var(--cellbackground);
+  padding: 10px;
+}
+
+.map{
+  margin: auto;
+}
 
 /* Programme */
 #practice{
