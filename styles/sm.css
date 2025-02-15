@@ -131,8 +131,8 @@ body {
 
 .banner{
     text-align: center;
-    padding: 40px var(--topbottom);
-    font-size: 1.4em;
+    padding: 0.6em var(--topbottom);
+    font-size: 1.2em;
 }
 
 /* Recruitment */
