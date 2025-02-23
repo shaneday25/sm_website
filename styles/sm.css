@@ -84,37 +84,38 @@ h4{
   }
 
 /* Header */
-header h1{
-    margin: 30px 0;
+#header h1{
+    margin: 0;
     text-align: center;
 }
 
-.header {
+#header {
     background-color: var(--headerfooterbackground);
     color: var(--headerfootercolor);
     padding: 0 0;
     margin: 0 0;
 }
 
-.header a{
+#navigation a{
     color: var(--headerfootercolor);
     padding: 10px 10px;
 }
 
-nav {
-    display: block;
-    padding: 0 0;
+Nav {
+  position: sticky;
+  top: 0;
+  margin: 0 0;
+  padding: 10px 0;
+  background-color: var(--headerfooterbackground);
+  color: var(--headerfootercolor);
 }
 
-.navigation {
-    margin: 0 0;
-    padding: 10px 0;
-}
+
+
 
 /* body */
-body {
-  max-width: 800px;
-  margin: auto;   
+body{
+  width: 100%
 }
 
 /* Welcome */
@@ -188,8 +189,8 @@ body {
  }
 
 #container div{
-  /*border: solid var(--cellborderweight) var(--cellborder);
-  background: var(--cellbackground);*/
+  border: solid var(--cellborderweight) var(--cellborder);
+  background: var(--cellbackground);
  
 }
 
@@ -206,13 +207,6 @@ body {
   padding: 10px;
 }
 
-.cell_image{
-
-}
-
-.cell_map{
-
-}
 
 /* Programme */
 #practice{
@@ -229,7 +223,7 @@ body {
 
 /* small tablet styles */
 
-@media screen and (min-width: 620px){
+@media screen and (min-width: 700px){
     body{
         font-size: 16px;
         max-width: 90%;

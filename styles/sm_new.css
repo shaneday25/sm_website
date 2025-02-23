@@ -1,0 +1,229 @@
+/* Variables */
+:root{
+  --colour_black: #141414;
+  --colour_red: #cc303d;
+  --colour_yellow: #fcfc97;
+  --colour_white: #fcfbfb;
+  --colour_grey: #d3d0d0;
+
+  --gap: 20px;
+  --leftright: 10px;
+  --topbottom: 10px;
+  --borderradius: 5px;
+  --cellborderweight: 2px;
+  --maxwidth: 70%;
+}
+
+/* Reset */
+
+body,p,a,ul,li,h1,h2,h3,h4{
+  margin: 0;
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+*{
+box-sizing: border-box;
+}
+
+
+/* Base styles */
+body{
+  background-color: var(--background);
+  font-family: 'Montserrat';
+  font-size: 16px; 
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+h1,h2,h3,h4{
+  color: var(primaryfont);
+  font-weight: normal;
+  line-height: 1.4em;
+}
+
+p,a,li{
+  color: var(secondaryfont);
+  line-height: 1.4em;
+  font-size: 1em;
+  padding: 0.5em 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: centre;
+}
+
+h4{
+  font-size: 1.2em;
+}
+
+/* body */
+body{
+  width: 100%;
+  background-color: var(--colour_grey);
+}
+
+/* Header */
+#header {
+  background-color: var(--colour_black);
+  color: var(--colour_white);
+  padding: 0.8em 0 0 0;
+  margin: 0;
+}
+
+#header h1{
+  margin: 0;
+  text-align: center;
+}
+
+/* Navigation */
+
+Nav{
+  position: sticky;
+  top: 0;
+  background-color: var(--colour_black);
+  padding: 1em;
+}
+
+Nav a{
+  color: var(--colour_white);
+  font-size: 1.2em;
+  padding: 0.8em 1em;
+}
+
+/* Welcome */
+
+#welcome{
+  text-align: center;
+  padding: 1em 1em 0;
+  margin: 0;
+}
+
+.welcome_message{
+  padding: 0.8em 0;
+}
+
+.birthday_banner{
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+.banner{
+    text-align: center;
+    padding: 0.6em var(--topbottom);
+    font-size: 1.8em;
+}
+
+/* Recruitment */
+
+#recruitment{
+  margin: 1em 0; 
+}
+
+.recruitment{
+  background-color: var(--colour_red);
+  text-align: justify;
+  padding: 1em;
+  color: var(--colour_white);
+}
+
+#recruitment h2{
+  text-align: center;
+}
+
+/* Practice */
+
+#practice{
+  margin: 1em 0;
+  text-align: center;
+}
+
+.practice{
+  background-color: var(--colour_black);
+  padding: 1em;
+  color: var(--colour_white);
+}
+
+#programme{
+  margin: 1em 0;
+}
+
+.programme{
+  background-color: var(--colour_yellow);
+  text-align: justify;
+  padding: 1em;
+  color: var(--colour_black);
+}
+
+.programme h2{
+  text-align: center;
+}
+
+/* Footer */
+#footer {
+  background-color: var(--colour_black);
+  color: var(--colour_white);
+  padding: 0.8em 0 ;
+  margin: 0;
+}
+
+#footer h2{
+  text-align: center;
+}
+
+#footer a{
+  color: var(--colour_white);
+  font-size: 1.2em;
+  padding: 0.8em 1em;
+}
+
+/* mobile styles */
+
+/* small tablet styles */
+
+@media screen and (min-width: 700px){
+  body{
+    display: none;
+    font-size: 16px;
+    max-width: 90%;
+      
+  }
+}
+
+/* large tablet & laptop styles */
+
+@media screen and (min-width: 960px){
+  body{
+      font-size: 18px;
+      max-width: 80%;        
+  }
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 1200px){
+  body{
+      font-size: 20px;
+      max-width: 60%;
+      
+  }
+}
