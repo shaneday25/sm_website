@@ -34,7 +34,7 @@ box-sizing: border-box;
 body{
   background-color: var(--background);
   font-family: 'Montserrat';
-  font-size: 14px; 
+  font-size: 12px; 
 }
 
 /* fonts */
@@ -62,7 +62,7 @@ h1 {
 
 h2 {
   font-size: 1.6em;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h3{
@@ -186,7 +186,7 @@ Nav a{
   margin: 0;
 }
 
-#footer h2{
+#footer h1{
   text-align: center;
 }
 
