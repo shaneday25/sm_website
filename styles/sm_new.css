@@ -67,7 +67,7 @@ h2 {
 
 h3{
   font-size: 1.4em;
-  font-weight: bold;
+  font-weight: Normal;
   text-align: centre;
 }
 
@@ -177,6 +177,12 @@ Nav a{
 .programme h2{
   text-align: center;
 }
+
+/* Dancing - info */
+#dances{
+  padding: 0 1em;
+}
+
 
 /* Footer */
 #footer {
